@@ -16,18 +16,17 @@ class ControllerActionPredispatchObserver implements ObserverInterface
     public function __construct(
 		\Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
 		\Psr\Log\LoggerInterface $logger //log injection
-    ) {
-        $this->logger = $logger;
+    )
+	{
+		$this->logger = $logger;
 		$this->scopeConfig = $scopeConfig;
-    }
+	}
 	
-
-    public function execute(\Magento\Framework\Event\Observer $observer)
+	public function execute(\Magento\Framework\Event\Observer $observer)
     {
 		$this->logger->debug( $this->getText() );
 	}
 	
-
 	public function getText(){
 		return "Controller action";
 	}
