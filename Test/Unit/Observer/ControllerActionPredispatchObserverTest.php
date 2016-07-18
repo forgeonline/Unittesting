@@ -7,7 +7,7 @@ namespace Forgeonline\Unittesting\Test\Unit\Observer;
 
 use Magento\Framework\TestFramework\Unit\Helper\ObjectManager;
 
-class CmsPageRenderObserverTest extends \PHPUnit_Framework_TestCase
+class ControllerActionPredispatchObserverTest extends \PHPUnit_Framework_TestCase
 {
     /** @var \Magento\Framework\App\RequestInterface|\PHPUnit_Framework_MockObject_MockObject */
     protected $request;
@@ -25,7 +25,7 @@ class CmsPageRenderObserverTest extends \PHPUnit_Framework_TestCase
 		->disableOriginalConstructor()->getMock();
 
         $this->model = $helper->getObject(
-            'Forgeonline\Unittesting\Observer\CmsPageRenderObserver',
+            'Forgeonline\Unittesting\Observer\ControllerActionPredispatchObserver',
             [
                 'request' => $this->request
             ]

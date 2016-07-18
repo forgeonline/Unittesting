@@ -8,7 +8,7 @@ namespace Forgeonline\Unittesting\Observer;
 use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
 
-class CmsPageRenderObserver implements ObserverInterface
+class ControllerActionPredispatchObserver implements ObserverInterface
 {
 	protected $logger;
 	protected $scopeConfig;
