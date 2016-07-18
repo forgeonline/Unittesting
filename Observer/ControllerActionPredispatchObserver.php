@@ -13,7 +13,7 @@ class ControllerActionPredispatchObserver implements ObserverInterface
 	protected $logger;
 	protected $scopeConfig;
 	
-    public function __construct(
+	public function __construct(
 		\Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
 		\Psr\Log\LoggerInterface $logger //log injection
     )
