@@ -24,7 +24,7 @@ class ControllerActionPredispatchObserverTest extends \PHPUnit_Framework_TestCas
 		->disableOriginalConstructor()->getMock();
 		
 		$this->model = $helper->getObject(
-		'Forgeonline\Unittesting\Observer\ControllerActionPredispatchObserver',
+			'Forgeonline\Unittesting\Observer\ControllerActionPredispatchObserver',
 			[
 				'request' => $this->request
 			]
