@@ -8,4 +8,7 @@ Full articles can be found at
 http://www.forgeonline.co.nz/magento-2-development-unit-testing/
 
 
+This repository is also used to explain Magento 2 Import Export
+http://www.forgeonline.co.nz/magento-2-import-export-module-development/
+
 
